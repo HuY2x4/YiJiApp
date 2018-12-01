@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hyx.appyiji.MainAddActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_add_toolbar"
+        android:layout_height="70dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/back_main_head"
+        android:paddingTop="30dp"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/main_add_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_clear_white_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记一笔"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"/>
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_monetization_on_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额"
+            android:textSize="20dp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/main_add_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="0.00"
+            android:textColorHint="@color/yellow_down_down"
+            android:textColor="@color/yellow_down_down"
+            android:textSize="33dp"
+            android:layout_marginLeft="150dp"
+            android:background="#fcfcfc"/>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/main_add_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/yellow"
+        app:tabTextColor="@color/white"
+        app:tabTextAppearance="@style/MyTabTextAppearance">
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_add_view"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_date_range_black_24dp"/>
+
+        <Button
+            android:id="@+id/main_add_dateButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="2018年11月20日"
+            android:background="@null"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/main_add_dateHS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="19:11"
+            android:textSize="15dp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+       >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_location_on_black_24dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_assignment_black_24dp"/>
+
+        <EditText
+            android:id="@+id/main_add_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:background="@null"
+            android:hint="备注"
+            android:textSize="17dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_local_see_black_24dp"/>
+        <TextView
+            android:id="@+id/main_add_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:hint="点击上传图片"
+            android:textSize="17dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="38dp">
+        <Button
+            android:id="@+id/main_add_baocun"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_yuanjiao"
+            android:shadowRadius="1"
+            android:text="保   存"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/welcome_viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/welcome_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/welcome_point1"
+            android:src="@drawable/ic_circle_select"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/welcome_point2"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_circle_default"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/welcome_point3"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_circle_default"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome_enter"
+        android:text="进入首页"
+        android:textSize="30dp"/>
+</RelativeLayout>

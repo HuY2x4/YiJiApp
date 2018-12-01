@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hyx.appyiji.LoginActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_marginBottom="30dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_person_black_24dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gray"
+            android:gravity="center"
+            app:hintTextAppearance="@color/gray">
+
+            <EditText
+                android:hint="用户名"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/login_userName"
+                android:textSize="20dp"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gray"
+            app:hintAnimationEnabled="true"
+            app:hintTextAppearance="@color/gray"
+            app:passwordToggleEnabled="true"
+            android:gravity="center">
+            <EditText
+                android:inputType="textPassword"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/login_password"
+                android:hint="密码"
+                android:textSize="20dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/login_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/button_yuanjiao"
+            android:text="登录"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/login_zhuce"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="还没有账号？创建一个吧"
+            android:gravity="center"
+            android:textColor="#6b6666" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

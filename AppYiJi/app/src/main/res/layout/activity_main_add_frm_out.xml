@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_add_fragment_out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.example.hyx.appyiji.ReClass.MyRadioGroup
+        android:id="@+id/main_add_out_group"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/main_add_out_eat"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="餐饮食品"
+                android:gravity="center"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/selector_add_eat"/>
+
+            <RadioButton
+                android:id="@+id/main_add_out_clothes"
+                android:layout_marginLeft="12dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="衣服饰品"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_add_clothes"/>
+
+            <RadioButton
+                android:id="@+id/main_add_out_life"
+                android:layout_marginLeft="12dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="居家生活"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_add_life"/>
+
+            <RadioButton
+                android:id="@+id/main_add_out_car"
+                android:layout_marginLeft="12dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="行车交通"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_add_car"/>
+
+            <RadioButton
+                android:id="@+id/main_add_out_game"
+                android:layout_marginLeft="12dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="休闲娱乐"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_add_game"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/main_add_out_book"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_add_book"
+                android:gravity="center"
+                android:text="文化教育" />
+
+        </LinearLayout>
+
+    </com.example.hyx.appyiji.ReClass.MyRadioGroup>
+
+</LinearLayout>

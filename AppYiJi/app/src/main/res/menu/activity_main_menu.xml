@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/main_nav_set"
+        android:icon="@drawable/ic_settings_applications_black_24dp"
+        android:title="设置"/>
+
+    <item
+        android:id="@+id/main_nav_upload"
+        android:icon="@drawable/ic_file_upload_black_24dp"
+        android:title="备份"/>
+    <item
+        android:id="@+id/main_nav_download"
+        android:icon="@drawable/ic_file_download_black_24dp"
+        android:title="恢复"/>
+    <item
+        android:id="@+id/main_nav_us"
+        android:icon="@drawable/ic_people_outline_black_24dp"
+        android:title="关于我们"/>
+    <item
+        android:id="@+id/main_nav_test"
+        android:icon="@drawable/ic_pool_black_24dp"
+        android:title="测试页面"/>
+</menu >

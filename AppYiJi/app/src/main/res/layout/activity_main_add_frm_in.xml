@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.example.hyx.appyiji.ReClass.MyRadioGroup
+        android:id="@+id/main_add_in_group"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/main_add_in_parent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="父母援助"
+                android:gravity="center"
+                android:button="@null"
+                android:checked="true"
+
+                android:drawableTop="@drawable/selector_in_parent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/main_add_in_work"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="兼职所得"
+                android:gravity="center"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_in_work"/>
+
+        </LinearLayout>
+
+
+
+    </com.example.hyx.appyiji.ReClass.MyRadioGroup>
+
+</LinearLayout>

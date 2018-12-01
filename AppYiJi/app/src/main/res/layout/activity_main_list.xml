@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal">
+    <com.example.hyx.appyiji.Adapter.SlideRecycle.MyLinearLayout
+        android:id="@+id/main_list_MyL"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="12dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="12dp">
+
+            <ImageView
+                android:id="@+id/main_list_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_main_list_eat" />
+
+
+            <TextView
+                android:id="@+id/main_list_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/main_list_img"
+                android:text="吃饭"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/main_list_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/main_list_img"
+                android:text="2018-11-4" />
+
+
+            <TextView
+                android:id="@+id/main_list_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="666"
+                android:textColor="@color/red"
+                android:textSize="25dp" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/main_list_delete"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/back_main_head">
+
+            <TextView
+                android:id="@+id/main_list_delete_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+    </com.example.hyx.appyiji.Adapter.SlideRecycle.MyLinearLayout>
+
+
+
+
+    <!--<TextView
+        android:id="@+id/main_list_delete"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:background="#f27e1e"
+        android:gravity="center"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="删  除"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp" />-->
+
+</LinearLayout>
