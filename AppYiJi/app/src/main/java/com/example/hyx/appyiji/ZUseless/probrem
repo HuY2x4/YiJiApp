@@ -1,0 +1,3 @@
+现在的问题记录：
+    上传：服务器端JSONArray jsonArrayIn = JSONArray.fromObject(inList);//这里崩了
+    下载：能传回来，不知道能不能解析，并且没有保存到数据库中

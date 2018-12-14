@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <com.example.hyx.appyiji.ReClass.MyRadioGroup
+    <com.example.hyx.appyiji.Activity.MainAddView.ExtendsClass.MyRadioGroup
         android:id="@+id/main_add_in_group"
         android:layout_width="match_parent"
         android:layout_height="140dp"
@@ -42,6 +42,6 @@
 
 
 
-    </com.example.hyx.appyiji.ReClass.MyRadioGroup>
+    </com.example.hyx.appyiji.Activity.MainAddView.ExtendsClass.MyRadioGroup>
 
 </LinearLayout>

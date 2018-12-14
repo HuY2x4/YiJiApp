@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <Button
+    android:layout_height="match_parent"
+    >
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_centerInParent="true"
+        android:id="@+id/test_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="crate"
-        android:id="@+id/test_crate"/>
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="BallPulseIndicator"
+        app:indicatorColor="@color/yellow"
+        />
     <Button
+        android:id="@+id/test_kai"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/test_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="insert"
-        android:id="@+id/test_insert"/>
+        android:text="kai"/>
     <Button
+        android:id="@+id/test_guan"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/test_kai"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="select"
-        android:id="@+id/test_select"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="copy"
-        android:id="@+id/test_copy"/>
-</LinearLayout>
+        android:text="guan"/>
+</RelativeLayout>

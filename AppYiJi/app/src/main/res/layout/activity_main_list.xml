@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:orientation="horizontal">
-    <com.example.hyx.appyiji.Adapter.SlideRecycle.MyLinearLayout
+    <com.example.hyx.appyiji.Activity.MainView.SlideRecycle.MyLinearLayout
         android:id="@+id/main_list_MyL"
         android:layout_width="fill_parent"
         android:layout_height="100dp"
@@ -80,7 +80,7 @@
 
 
         </RelativeLayout>
-    </com.example.hyx.appyiji.Adapter.SlideRecycle.MyLinearLayout>
+    </com.example.hyx.appyiji.Activity.MainView.SlideRecycle.MyLinearLayout>
 
 
 
